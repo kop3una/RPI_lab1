@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6 {
 .Intro {
     width: 100%;
     height: 745px;
-    background: url(../images/Intro.jpg) center no-repeat;
+    background: url(../images/Intro.png) center no-repeat;
     user-select: none;
 
 }
@@ -119,6 +119,12 @@ h1,h2,h3,h4,h5,h6 {
     z-index: 100;
 }
 
+.logo {
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 94px;    
+}
+
 .nav{
    margin: 0 auto;
    font-size: 16px;
@@ -185,12 +191,27 @@ h1,h2,h3,h4,h5,h6 {
     opacity: 1;
 }
 
+.logo:hover{
+    cursor: pointer;
+}
+
 /* Section Phone*/
 .section__phone1 {
+   
     width: 100%;
+    width: 1280px;
+    left: 120px;
     height: 492px;
-    background: url(../images/phone.jpg) center no-repeat;
+    position: relative;
     user-select: none;
+    background-color: #f5f6f8;
+    overflow: hidden;
+}
+
+.imageBox{
+    position: absolute;
+	margin-left: 510px;
+	margin-top: 91px;
 }
 
 .phone1__title{
@@ -250,8 +271,17 @@ h1,h2,h3,h4,h5,h6 {
 .section__phone2 {
     width: 100%;
     height: 558px;
-    background: url(../images/phone2.jpg) center no-repeat;
+    width: 1280px;
+    left: 120px;
+    position: relative;
     user-select: none;
+    overflow: hidden;
+}
+
+.imageBox2{
+	position: absolute;
+	top: 146px;
+	margin-left: 33px;
 }
 
 .phone2__title{
@@ -337,8 +367,16 @@ h1,h2,h3,h4,h5,h6 {
 .Our__community{
     width: 100%;
     height: 483px;
-    background: url(../images/Our_comminuty.jpg) center no-repeat;
+    max-width: 1280px;
+    margin-left: 120px;
     user-select: none;
+    background-color: #f5f6f8;
+}
+
+.our__community__logo{
+    position: absolute;
+    margin-left: 185px;
+    margin-top: 45px;
 }
 
 .angle__our__community{
@@ -376,14 +414,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .photo{
-    display: flex;
+    width: 1000px;
 }
 
 .photo1{
     background: url(../images/photo1.jpg) center no-repeat;
     height: 244px;
     width: 370px;
-    margin-right: 24px;
+    margin-right: 20px;
 }
 
 .photo2{
@@ -421,7 +459,7 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 3px 0 0 3px;
     background-color: #ffffff;
     border: 0;
-    margin-top: 26px;
+    margin-top: 25px;
     margin-left: 467px;
     padding-left: 22px;
 }
@@ -434,7 +472,7 @@ h1,h2,h3,h4,h5,h6 {
     border: 0;
     padding: 0;
     background-color: #16a085;
-    margin-top: 26px;
+    margin-top: 25px;
     margin-left: -5px;
 }
 
@@ -551,9 +589,8 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Footer */
 .Footer{
-     width: 100%;
+    width: 100%;
     height: 132px;
-    background: url(../images/footer.jpg) center no-repeat;
     user-select: none;
 }
 
@@ -597,4 +634,10 @@ h1,h2,h3,h4,h5,h6 {
     color: #373737;
     margin-left: 127px;
     margin-top: 14px;
+}
+
+.footer__logo{
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 1097px;
 }
