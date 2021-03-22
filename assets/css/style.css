@@ -1,0 +1,600 @@
+body {
+    margin: 0;
+    font-family: 'GothamRounded';
+    font-family: 'GothamRoundedMedium';
+
+
+    font-size: 16px;
+    line-height: 1.6;
+    
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/*Container*/
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+
+/*Intro*/
+.Intro {
+    width: 100%;
+    height: 745px;
+    background: url(../images/Intro.jpg) center no-repeat;
+    user-select: none;
+
+}
+
+.intro__title{
+    padding: 327px 0 0 0;
+    font-size: 36px;
+    letter-spacing: 5px; /* Если 6px, то правая часть вылазит*/ 
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+}
+
+.intro__subtitle{
+    margin: 0;
+    font-family: 'GothamRoundedMedium';
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Intro button*/
+.btn__intro{
+    margin: 18px 0 0 557px;
+    
+    display: inline-block;
+    padding: 16px 29px 13px 29px;
+    border-radius: 3px;
+    background-color: #16a085;
+    outline: none;
+    
+    
+    
+    font-size: 12px;
+   
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    
+    transition: background .2s linear, color .2s linear;
+}
+
+.btn__intro:hover{
+    background-color: #fff;
+    color: #16a085;
+}
+
+/* Intro Icon*/
+.intro__icon{
+    margin: 214px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    transition: color .1s linear;
+    user-select: none;
+}
+
+#flickr{
+    margin: 0px 8px;
+    
+}
+
+#flickr, #twitter, #dribbble{
+   transition: color .1s linear; 
+}
+
+#flickr:hover, #twitter:hover, #dribbble:hover {
+    color:#b86b58;
+    cursor: pointer;
+}
+
+
+/*Header*/
+.header{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.nav{
+   margin: 0 auto;
+   font-size: 16px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   padding: 66px 0 0 0;   
+   user-select: none;
+}
+
+.nav__link1{
+   color: #fff;
+   text-decoration: none; 
+   margin: 0 0 0 272px; 
+   position: relative;
+   transition: color .1s linear;
+}
+
+.nav__link2{
+   color: #fff;
+   text-decoration: none; 
+   margin: 0 0 0 60px; 
+   position: relative;
+    transition: color .1s linear;
+}
+
+.nav__link3{
+    color: #fff;
+    text-decoration: none; 
+    margin: 0 0 0 247px;
+    position: relative;
+    transition: color .1s linear;
+}
+
+.nav__link4{
+    color: #fff;
+    text-decoration: none; 
+    margin: 0 0 0 68px; 
+    position: relative;
+    transition: color .1s linear;
+}
+
+.nav__link1::after, .nav__link2::after,.nav__link3::after,.nav__link4::after{
+    content: "";
+    display: block; 
+    width: 98%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity .1s linear;
+    
+    background-color: #b86b58;
+    
+    position: absolute;
+}
+
+.nav__link1:hover, .nav__link2:hover, .nav__link3:hover, .nav__link4:hover{
+    color: #b86b58;
+   
+}
+
+.nav__link1:hover::after, .nav__link2:hover::after, .nav__link3:hover::after, .nav__link4:hover::after {
+    opacity: 1;
+}
+
+/* Section Phone*/
+.section__phone1 {
+    width: 100%;
+    height: 492px;
+    background: url(../images/phone.jpg) center no-repeat;
+    user-select: none;
+}
+
+.phone1__title{
+    width: 100%;
+    max-width: 520px;
+    padding: 108px 0 0 128px;
+    font-size: 17px;
+    letter-spacing: 3px;    
+    color: #16a085;
+    text-transform: uppercase;
+    line-height: 22px;
+}
+
+.phone1__text{
+    font-family: GothamRoundedMedium;
+    width: 100%;
+    max-width: 590px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #373737;
+    padding: 38px 0 0 128px;
+}
+
+.phone1__text1{
+    margin: 0
+}
+
+/* Phone button */
+.btn__phone1{
+    margin: 42px 0 0 128px;
+    
+    display: inline-block;
+    padding: 18px 42px 13px 42px;
+    border-radius: 3px;
+    background-color: #16a085;
+    outline: none;
+    
+    
+    
+    font-size: 12px;
+   
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    
+    transition: background .2s linear, color .2s linear;
+}
+
+.btn__phone1:hover{
+    background-color: #4f8fbb;
+    color: #fff;
+}
+
+/* Section Phone2 */
+.section__phone2 {
+    width: 100%;
+    height: 558px;
+    background: url(../images/phone2.jpg) center no-repeat;
+    user-select: none;
+}
+
+.phone2__title{
+    padding: 143px 0 0 768px;
+    font-size: 17px;
+    letter-spacing: 3px;    
+    color: #16a085;
+    text-transform: uppercase;
+    line-height: 22px;
+}
+
+.phone2__text{
+    margin: 0 0 0 768px;
+    font-family: GothamRoundedMedium;
+    width: 100%;
+    max-width: 468px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    color: #373737;
+    padding: 34px 0 0 0;
+}
+
+.phone2__text1{
+    margin: 0
+}
+
+.phone2__number{
+    font-size: 11px;
+    margin-left: 768px;
+    margin-top: 43px;
+}
+
+.angle{  
+    margin-top: -5px;
+    margin-left: 768px;
+    padding: 0;
+    height: 40px;
+    user-select: none;
+}
+
+#angle__left{
+    margin-right: 14px;
+}
+
+#angle__left,#angle__right{
+     transition: color .2s linear;
+}
+
+#angle__left:hover,#angle__right:hover{
+    color: #16a085;
+    cursor: pointer;
+}
+
+
+/* Phone2 button */
+.btn__phone2{
+    margin: 38px 0 0 768px;
+    
+    display: inline-block;
+    padding: 16px 44px 15px 44px;
+    background-color: #16a085;
+    outline: none;
+    
+    
+    
+    font-size: 12px;
+   
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    
+    transition: background .2s linear, color .2s linear;
+}
+
+.btn__phone2:hover{
+    background-color: #4f8fbb;
+    color: #fff;
+}
+
+/* Our community */
+.Our__community{
+    width: 100%;
+    height: 483px;
+    background: url(../images/Our_comminuty.jpg) center no-repeat;
+    user-select: none;
+}
+
+.angle__our__community{
+    margin-left: 1112px;
+    padding-top: 86px;
+    user-select: none;
+}
+
+.text__photo{
+    display: flex;
+}
+
+.text{
+    margin-right: 78px;
+}
+
+.out__community__title{
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #373737;
+    margin-left: 128px;
+    margin-top: 124px;
+}
+
+.out__community__subtitle{
+    font-family: GothamRoundedMedium;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 177px;
+    height: 177px;
+    margin: 15px 0 0 130px;
+    line-height: 12px;
+}
+
+.photo{
+    display: flex;
+}
+
+.photo1{
+    background: url(../images/photo1.jpg) center no-repeat;
+    height: 244px;
+    width: 370px;
+    margin-right: 24px;
+}
+
+.photo2{
+    background: url(../images/photo2.jpg) center no-repeat;
+    height: 244px;
+    width: 370px;
+}
+
+/*Subscribe*/
+.Subscribe{
+    width: 100%;
+    height: 789px;
+    background: url(../images/Subscribe.jpg) center no-repeat;
+    user-select: none;
+}
+
+.Subscribe__title{
+    font-size: 23px;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-transform:uppercase;
+    padding-top: 344px;
+    padding-left: 402px;
+}
+
+.Email{
+    font-family: GothamRounded;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+    
+    width: 280px;
+    height: 60px;
+    border-radius: 3px 0 0 3px;
+    background-color: #ffffff;
+    border: 0;
+    margin-top: 26px;
+    margin-left: 467px;
+    padding-left: 22px;
+}
+
+.btn__subscribe{
+    vertical-align: bottom;
+    width: 62px;
+    height: 60px;
+    border-radius: 0 3px 3px 0;
+    border: 0;
+    padding: 0;
+    background-color: #16a085;
+    margin-top: 26px;
+    margin-left: -5px;
+}
+
+#check{
+    color: #ffffff;
+    font-size: 24px;
+    transition: color .1s;
+}
+
+#check:hover{
+    cursor: pointer;
+    color: #28404c;
+}
+
+/* Download */
+.Download{
+    background-color: #f5f6f7;
+    height: 396px; 
+    max-width: 1280px;
+    margin-top: 1px;
+    margin-left: 120px;
+}
+
+.Download__title{
+    padding-top: 84px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #373737;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.Dowload__text{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2px;
+    width: 862px;
+    height: 70px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    color: #373737;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Download__buttons{
+    display: flex;
+    margin-top: 38px;
+}
+
+.apple{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    padding: 17px 78px 13px 25px;
+    border-radius: 3px 0 0 3px;
+    margin-left: 330px;
+    
+    background-color: #1abc9c;
+    transition: color .1s;
+}
+
+#apple{
+    font-size: 26px;
+    transition: color .1s;
+}
+
+.btn__apple{
+    background-color: #16a085;
+    color: #ffffff;
+    padding: 16px 18px 12px 18px;
+    margin-right: 26px;
+    border-radius: 0 3px 3px 0;
+}
+
+.apple:hover, #apple:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.google{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    padding: 14px 63px 14px 30px;
+    border-radius: 3px 0 0 3px;
+    
+    background-color: #1abc9c;
+    transition: color .1s;
+    
+}
+
+
+#android{
+    font-size: 30px;
+}
+
+.btn__google{
+    background-color: #16a085;
+    color: #ffffff;
+    padding: 12px 16px 12px 16px;
+    border-radius: 0 3px 3px 0
+}
+
+.google:hover, #android:hover{
+    color: #a4ca39;
+    cursor: pointer;
+}
+
+/* Footer */
+.Footer{
+     width: 100%;
+    height: 132px;
+    background: url(../images/footer.jpg) center no-repeat;
+    user-select: none;
+}
+
+.footer__nav{
+    padding-left: 127px;
+    padding-top: 42px;
+    
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.link1, .link2, .link3{
+    color: #373737;
+    text-decoration: none;
+    position: relative;
+    margin-right: 10px;
+    transition: color .1s;
+}
+
+.link1::after, .link2::after{
+    content: "";
+    display: inline-block;
+    background-color: #16a085;
+    width: 2px;
+    border-radius: 2px;
+    height: 90%;
+    left: 85px;
+    top: 0px;
+    position: absolute;
+    pointer-events: none;
+}
+
+.link1:hover, .link2:hover, .link3:hover{
+    color: #16a085;
+}
+
+.footer__text{
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #373737;
+    margin-left: 127px;
+    margin-top: 14px;
+}
