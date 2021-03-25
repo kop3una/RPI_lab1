@@ -32,10 +32,11 @@ h1,h2,h3,h4,h5,h6 {
 
 /*Intro*/
 .Intro {
-    width: 100%;
+    width: 1280px;
     height: 745px;
     background: url(../images/Intro.png) center no-repeat;
     user-select: none;
+    margin-left: 120px;
 
 }
 
@@ -365,9 +366,8 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Our community */
 .Our__community{
-    width: 100%;
     height: 483px;
-    max-width: 1280px;
+    width: 1280px;
     margin-left: 120px;
     user-select: none;
     background-color: #f5f6f8;
@@ -432,7 +432,8 @@ h1,h2,h3,h4,h5,h6 {
 
 /*Subscribe*/
 .Subscribe{
-    width: 100%;
+    width: 1280px;
+    margin-left: 120px;
     height: 789px;
     background: url(../images/Subscribe.jpg) center no-repeat;
     user-select: none;
@@ -459,6 +460,7 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 3px 0 0 3px;
     background-color: #ffffff;
     border: 0;
+    outline: none;
     margin-top: 25px;
     margin-left: 467px;
     padding-left: 22px;
@@ -470,6 +472,7 @@ h1,h2,h3,h4,h5,h6 {
     height: 60px;
     border-radius: 0 3px 3px 0;
     border: 0;
+     outline: none;
     padding: 0;
     background-color: #16a085;
     margin-top: 25px;
@@ -589,7 +592,8 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Footer */
 .Footer{
-    width: 100%;
+    width: 1280px;
+    margin-left: 120px;
     height: 132px;
     user-select: none;
 }
